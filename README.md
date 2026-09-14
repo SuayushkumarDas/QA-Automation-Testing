@@ -1,243 +1,381 @@
-<div align="center">
+# 🧪 QA Automation Testing
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=250&section=header&text=QA%20Automation%20Framework&fontSize=50&fontColor=ffffff&animation=fadeIn"/>
-
-# 🚀 QA Automation Testing Framework
-
-### 🧪 Professional Web Automation Framework using Python & Selenium
-
-<p>
-<img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python"/>
-<img src="https://img.shields.io/badge/Selenium-WebDriver-green?style=for-the-badge&logo=selenium"/>
-<img src="https://img.shields.io/badge/Pytest-Testing-orange?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/License-MIT-red?style=for-the-badge"/>
-<img src="https://img.shields.io/github/stars/tasnem-tech/qa-automation-project?style=for-the-badge"/>
-<img src="https://img.shields.io/github/forks/tasnem-tech/qa-automation-project?style=for-the-badge"/>
+<p align="center">
+  <b>Web UI Test Automation using Python & Selenium</b>
 </p>
 
-### ⚡ Automating repetitive testing with Python, Selenium & Pytest
-
-</div>
-
----
-
-# 📖 Overview
-
-This project is a **professional QA Automation Testing Framework** built to automate browser testing, improve software quality, and reduce repetitive manual testing.
-
-It demonstrates modern software testing practices including:
-
-- 🔐 Login Automation
-- 📝 Form Validation
-- 🌐 Browser Automation
-- 📊 Test Reporting
-- 🔄 Regression Testing
-- ✅ Functional Testing
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium&logoColor=white" alt="Selenium">
+  <img src="https://img.shields.io/badge/Pytest-Test%20Framework-orange?logo=pytest&logoColor=white" alt="Pytest">
+  <img src="https://img.shields.io/badge/Automation-Web%20Testing-purple" alt="Web Testing">
+  <img src="https://img.shields.io/badge/Status-Active-success" alt="Status">
+</p>
 
 ---
 
-# ✨ Features
+## 📌 Overview
 
-| Feature | Status |
-|----------|:------:|
-| 🔐 Login Testing | ✅ |
-| 📝 Registration Testing | ✅ |
-| 🌐 Browser Automation | ✅ |
-| 📋 Form Validation | ✅ |
-| 🚨 Error Message Verification | ✅ |
-| 🔄 Regression Testing | ✅ |
-| 📊 HTML Test Reports | ✅ |
-| 📸 Screenshot Capture | ✅ |
+**QA Automation Testing** is a Python-based web automation project developed to demonstrate the fundamentals of **automated software testing using Selenium WebDriver**.
+
+The project focuses on automating browser interactions, executing web validation steps, and establishing a foundation for scalable UI test automation using **Python, Selenium, and Pytest**.
+
+It is designed as a practical demonstration of core **QA automation concepts**, including browser automation, test execution, validation, and organized test assets.
 
 ---
 
-# 🏗 Framework Architecture
+## 🎯 Project Objectives
+
+The primary objectives of this project are to:
+
+* 🔹 Automate web browser interactions using Selenium WebDriver
+* 🔹 Execute automated functional testing workflows
+* 🔹 Validate web page behavior through automated checks
+* 🔹 Use Python for test automation scripting
+* 🔹 Establish a foundation for Pytest-based test execution
+* 🔹 Maintain organized test cases and supporting project documentation
+* 🔹 Demonstrate practical understanding of software QA and automation concepts
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology                | Purpose                                |
+| ------------------------- | -------------------------------------- |
+| 🐍 **Python**             | Automation scripting                   |
+| 🌐 **Selenium WebDriver** | Browser automation                     |
+| 🧪 **Pytest**             | Test execution framework               |
+| 🌎 **Google Chrome**      | Automated browser                      |
+| 🔧 **Git & GitHub**       | Version control and project management |
+
+---
+
+## 🔍 Current Automation Workflow
+
+The current Selenium automation script demonstrates a basic browser automation flow:
 
 ```text
-                    Test Cases
-                         │
-                         ▼
-               Selenium WebDriver
-                         │
-                         ▼
-                Browser Automation
-                         │
-                         ▼
-               Assertions & Validation
-                         │
-                         ▼
-              HTML Reports & Screenshots
+Start Test
+    │
+    ▼
+Launch Google Chrome
+    │
+    ▼
+Navigate to Web Page
+    │
+    ▼
+Retrieve Page Title
+    │
+    ▼
+Display Title
+    │
+    ▼
+Wait for Execution
+    │
+    ▼
+Close Browser
+    │
+    ▼
+Test Complete
 ```
 
 ---
 
-# 📂 Project Structure
+## 🧪 Automated Test
+
+The current automation script is located at:
 
 ```text
-QA-Automation-Framework/
-│
-├── 📂 tests
-│   ├── test_login.py
-│   ├── test_registration.py
-│   └── test_forms.py
-│
-├── 📂 pages
-│   ├── base_page.py
-│   ├── login_page.py
-│   └── registration_page.py
-│
-├── 📂 reports
-│
-├── 📂 screenshots
-│
-├── 📂 utils
-│
-├── 📜 requirements.txt
-├── 📜 README.md
-└── 📜 LICENSE
+scripts/
+└── scripts/
+    └── test_login.py
+```
+
+The script demonstrates:
+
+* Starting a Chrome WebDriver session
+* Navigating to a web URL
+* Retrieving the browser page title
+* Displaying the result
+* Closing the browser session
+
+### Example
+
+```python
+from selenium import webdriver
+import time
+
+driver = webdriver.Chrome()
+
+driver.get("https://example.com")
+
+print(driver.title)
+
+time.sleep(3)
+
+driver.quit()
 ```
 
 ---
 
-# 💻 Tech Stack
+## 📁 Project Structure
 
-| Technology | Purpose |
-|------------|----------|
-| 🐍 Python | Programming |
-| 🧪 Selenium | Browser Automation |
-| ⚙️ Pytest | Test Runner |
-| 🌍 ChromeDriver | Browser Driver |
-| 📊 HTML Reports | Reporting |
-| 🖥 GitHub | Version Control |
-
----
-
-# 📊 Automated Test Coverage
-
-| Scenario | Result |
-|----------|:------:|
-| Login | ✅ |
-| Invalid Login | ✅ |
-| Registration | ✅ |
-| Form Validation | ✅ |
-| Required Fields | ✅ |
-| Browser Navigation | ✅ |
-| UI Verification | ✅ |
+```text
+QA-Automation-Testing/
+│
+├── 📂 screenshots/
+│   └── .gitkeep
+│
+├── 📂 scripts/
+│   ├── .gitkeep
+│   ├── requirements
+│   └── 📂 scripts/
+│       └── test_login.py
+│
+├── 📂 test-cases/
+│   └── .gitkeep
+│
+├── 📄 index.html
+├── 📄 project-notes.md
+├── 📄 README.md
+└── 📄 requirements.txt
+```
 
 ---
 
-# 🚀 Installation
+## ⚙️ Installation & Setup
 
-Clone the repository
+### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/tasnem-tech/qa-automation-project.git
+git clone https://github.com/SuayushkumarDas/QA-Automation-Testing.git
 ```
 
-Go to the project
+Navigate into the project:
 
 ```bash
-cd qa-automation-project
+cd QA-Automation-Testing
 ```
 
-Install dependencies
+---
+
+### 2️⃣ Create a Virtual Environment
+
+It is recommended to use a Python virtual environment.
+
+```bash
+python -m venv venv
+```
+
+Activate it on Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+For macOS/Linux:
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 3️⃣ Install Dependencies
+
+Install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+Current dependencies:
 
-# ▶️ Run Tests
-
-Run all tests
-
-```bash
+```text
+selenium
 pytest
 ```
 
-Run login tests
+---
+
+## ▶️ Running the Automation
+
+Run the Selenium script directly with Python:
 
 ```bash
-pytest tests/test_login.py
+python scripts/scripts/test_login.py
 ```
 
-Generate HTML report
+The script will:
 
-```bash
-pytest --html=reports/report.html
+1. Open Google Chrome
+2. Navigate to the configured URL
+3. Retrieve the page title
+4. Print the title in the terminal
+5. Wait briefly
+6. Close the browser
+
+---
+
+## 🧪 QA Concepts Demonstrated
+
+This project provides hands-on exposure to fundamental QA automation concepts:
+
+### 🔹 Browser Automation
+
+Automating browser operations using **Selenium WebDriver**.
+
+### 🔹 Functional Validation
+
+Performing automated checks against expected web application behavior.
+
+### 🔹 Test Automation Scripting
+
+Writing reusable automation logic using **Python**.
+
+### 🔹 Test Framework Exposure
+
+Including **Pytest** as the project's testing framework dependency.
+
+### 🔹 Test Organization
+
+Maintaining separate directories for scripts, test cases, screenshots, and project documentation.
+
+### 🔹 Version Control
+
+Managing the automation project using **Git and GitHub**.
+
+---
+
+## 📊 Testing Approach
+
+The project follows a basic automation-oriented testing workflow:
+
+```text
+Test Planning
+     ↓
+Test Scenario
+     ↓
+Automation Script
+     ↓
+Browser Execution
+     ↓
+Application Interaction
+     ↓
+Validation
+     ↓
+Result Observation
+     ↓
+Browser Cleanup
+```
+
+This provides a foundation for expanding the project into a more comprehensive automated testing framework.
+
+---
+
+## 📸 Screenshots
+
+The `screenshots/` directory is included for storing test execution evidence and screenshots generated during future automation scenarios.
+
+```text
+screenshots/
 ```
 
 ---
 
-# 📸 Screenshots
+## 📝 Test Cases
 
-<div align="center">
+The `test-cases/` directory is maintained for documenting manual and automated test scenarios.
 
-| Login Test | HTML Report |
-|------------|-------------|
-| *(Add Screenshot)* | *(Add Screenshot)* |
+Potential test scenarios can include:
 
-</div>
-
----
-
-# 📈 Roadmap
-
-- ✅ Login Automation
-- ✅ Registration Automation
-- ✅ Form Validation
-- 🔄 Cross-browser Testing
-- 🔄 Docker Support
-- 🔄 Jenkins CI/CD
-- 🔄 GitHub Actions
-- 🔄 Parallel Execution
-- 🔄 Allure Reporting
+* Valid input testing
+* Invalid input testing
+* Navigation validation
+* UI element validation
+* Page title verification
+* Functional workflow validation
 
 ---
 
-# 🎯 Skills Demonstrated
+## 🚀 Future Enhancements
 
-<div align="center">
+The project can be extended into a more advanced QA automation framework by implementing:
 
-| QA | Automation | Programming |
-|----|------------|-------------|
-| Selenium | Pytest | Python |
-| Regression Testing | Functional Testing | Test Automation |
-| Bug Verification | HTML Reports | Git & GitHub |
-
-</div>
-
----
-
-# 🌟 Why This Project?
-
-✔ Demonstrates real-world QA automation
-
-✔ Uses industry-standard tools
-
-✔ Easily expandable
-
-✔ Clean project architecture
-
-✔ Recruiter-friendly portfolio project
+* [ ] Page Object Model (POM)
+* [ ] Proper Pytest test functions
+* [ ] Automated assertions
+* [ ] Login test automation
+* [ ] Positive and negative test scenarios
+* [ ] Explicit waits
+* [ ] Screenshot capture on test failure
+* [ ] HTML test reports
+* [ ] Parameterized testing
+* [ ] Test configuration management
+* [ ] Cross-browser testing
+* [ ] CI/CD integration using GitHub Actions
+* [ ] Automated test execution pipelines
 
 ---
 
-<div align="center">
+## 💼 Skills Demonstrated
 
-# 👩‍💻 Tasnem Islam Prome
+### Software Testing
 
-### QA Automation Engineer • Python Developer • Software Tester
+* Functional Testing
+* Test Case Design
+* Test Scenario Development
+* UI Validation
+* Test Execution
+* Defect-oriented thinking
 
-<p>
-<a href="https://github.com/tasnem-tech">
-<img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github">
-</a>
-</p>
+### Automation
 
-⭐ **If you like this project, consider giving it a Star!**
+* Selenium WebDriver
+* Python Automation
+* Browser Automation
+* Pytest Exposure
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,100:0F2027&height=120&section=footer"/>
+### Development Tools
 
-</div>
+* Git
+* GitHub
+* Chrome WebDriver
+* Command Line / PowerShell
+
+---
+
+## 🎓 Project Relevance
+
+This project demonstrates practical exposure to **software quality assurance and web test automation** and is particularly relevant to entry-level roles such as:
+
+* 🧪 QA Engineer
+* 🔍 Test Analyst
+* ⚙️ QA Automation Engineer
+* 💻 Software Test Engineer
+* 🧩 Functional Test Engineer
+* 📊 Quality Engineering Associate
+
+---
+
+## 👨‍💻 Author
+
+**Suayush Kumar Das**
+
+B.Tech — Electronics & Communication Engineering
+ITER, SOA University
+
+📍 Bhubaneswar, India
+
+🔗 **GitHub:**
+https://github.com/SuayushkumarDas
+
+---
+
+## ⭐ Repository
+
+If you find this project useful, consider giving the repository a ⭐.
+
+**QA Automation Testing — Python | Selenium | Pytest**
+
+Built to learn, automate, validate, and improve software quality. 🚀
